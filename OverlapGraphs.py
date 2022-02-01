@@ -2,7 +2,7 @@ from Bio import SeqIO
 k =3
 sequences =[]
 seq_names = []
-fasta = SeqIO.parse("graph2.fasta",'fasta')
+fasta = SeqIO.parse("graph.fasta",'fasta')
 for seq in fasta:
     sequences.append(str(seq.seq))
     seq_names.append(seq.id)
